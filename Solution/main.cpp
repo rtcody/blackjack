@@ -1,13 +1,16 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
+using sf::Texture; 
+using sf::Sprite; 
+
 
 int main()
 {
     sf::RenderWindow window(sf::VideoMode(1500, 1500), "SFML works!");
     sf::CircleShape shape(100.f);
-    sf::Texture queenOHearts; 
-    queenOHearts.loadFromFile("Cards/queen_of_hearts2.png"); 
-   sf::Sprite hearts(queenOHearts);   
+    Texture queenOHearts; 
+    queenOHearts.loadFromFile("Cards/quee n_of_hearts2.png"); 
+    Sprite hearts(queenOHearts);   
     shape.setFillColor(sf::Color::Green);   
 
     while (window.isOpen())
