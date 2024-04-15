@@ -3,9 +3,12 @@
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
+    sf::RenderWindow window(sf::VideoMode(1500, 1500), "SFML works!");
     sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
+    sf::Texture queenOHearts; 
+    queenOHearts.loadFromFile("Cards/queen_of_hearts2.png"); 
+   sf::Sprite hearts(queenOHearts);   
+    shape.setFillColor(sf::Color::Green);   
 
     while (window.isOpen())
     {
@@ -16,8 +19,10 @@ int main()
                 window.close();
         }
 
+        
+
         window.clear();
-        window.draw(shape);
+        window.draw(hearts);
         window.display();
     }
 

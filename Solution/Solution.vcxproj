@@ -196,6 +196,81 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="card.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\Card Sprites\10_of_clubs.png" />
+    <Image Include="..\..\Card Sprites\10_of_diamonds.png" />
+    <Image Include="..\..\Card Sprites\10_of_hearts.png" />
+    <Image Include="..\..\Card Sprites\10_of_spades.png" />
+    <Image Include="..\..\Card Sprites\2_of_clubs.png" />
+    <Image Include="..\..\Card Sprites\2_of_diamonds.png" />
+    <Image Include="..\..\Card Sprites\2_of_hearts.png" />
+    <Image Include="..\..\Card Sprites\2_of_spades.png" />
+    <Image Include="..\..\Card Sprites\3_of_clubs.png" />
+    <Image Include="..\..\Card Sprites\3_of_diamonds.png" />
+    <Image Include="..\..\Card Sprites\3_of_hearts.png" />
+    <Image Include="..\..\Card Sprites\3_of_spades.png" />
+    <Image Include="..\..\Card Sprites\4_of_clubs.png" />
+    <Image Include="..\..\Card Sprites\4_of_diamonds.png" />
+    <Image Include="..\..\Card Sprites\4_of_hearts.png" />
+    <Image Include="..\..\Card Sprites\4_of_spades.png" />
+    <Image Include="..\..\Card Sprites\5_of_clubs.png" />
+    <Image Include="..\..\Card Sprites\5_of_diamonds.png" />
+    <Image Include="..\..\Card Sprites\5_of_hearts.png" />
+    <Image Include="..\..\Card Sprites\5_of_spades.png" />
+    <Image Include="..\..\Card Sprites\6_of_clubs.png" />
+    <Image Include="..\..\Card Sprites\6_of_diamonds.png" />
+    <Image Include="..\..\Card Sprites\6_of_hearts.png" />
+    <Image Include="..\..\Card Sprites\6_of_spades.png" />
+    <Image Include="..\..\Card Sprites\7_of_clubs.png" />
+    <Image Include="..\..\Card Sprites\7_of_diamonds.png" />
+    <Image Include="..\..\Card Sprites\7_of_hearts.png" />
+    <Image Include="..\..\Card Sprites\7_of_spades.png" />
+    <Image Include="..\..\Card Sprites\8_of_clubs.png" />
+    <Image Include="..\..\Card Sprites\8_of_diamonds.png" />
+    <Image Include="..\..\Card Sprites\8_of_hearts.png" />
+    <Image Include="..\..\Card Sprites\8_of_spades.png" />
+    <Image Include="..\..\Card Sprites\9_of_clubs.png" />
+    <Image Include="..\..\Card Sprites\9_of_diamonds.png" />
+    <Image Include="..\..\Card Sprites\9_of_hearts.png" />
+    <Image Include="..\..\Card Sprites\9_of_spades.png" />
+    <Image Include="..\..\Card Sprites\ace_of_clubs.png" />
+    <Image Include="..\..\Card Sprites\ace_of_diamonds.png" />
+    <Image Include="..\..\Card Sprites\ace_of_hearts.png" />
+    <Image Include="..\..\Card Sprites\ace_of_spades.png" />
+    <Image Include="..\..\Card Sprites\ace_of_spades2.png" />
+    <Image Include="..\..\Card Sprites\black_joker.png" />
+    <Image Include="..\..\Card Sprites\jack_of_clubs.png" />
+    <Image Include="..\..\Card Sprites\jack_of_clubs2.png" />
+    <Image Include="..\..\Card Sprites\jack_of_diamonds.png" />
+    <Image Include="..\..\Card Sprites\jack_of_diamonds2.png" />
+    <Image Include="..\..\Card Sprites\jack_of_hearts.png" />
+    <Image Include="..\..\Card Sprites\jack_of_hearts2.png" />
+    <Image Include="..\..\Card Sprites\jack_of_spades.png" />
+    <Image Include="..\..\Card Sprites\jack_of_spades2.png" />
+    <Image Include="..\..\Card Sprites\king_of_clubs.png" />
+    <Image Include="..\..\Card Sprites\king_of_clubs2.png" />
+    <Image Include="..\..\Card Sprites\king_of_diamonds.png" />
+    <Image Include="..\..\Card Sprites\king_of_diamonds2.png" />
+    <Image Include="..\..\Card Sprites\king_of_hearts.png" />
+    <Image Include="..\..\Card Sprites\king_of_hearts2.png" />
+    <Image Include="..\..\Card Sprites\king_of_spades.png" />
+    <Image Include="..\..\Card Sprites\king_of_spades2.png" />
+    <Image Include="..\..\Card Sprites\queen_of_clubs.png" />
+    <Image Include="..\..\Card Sprites\queen_of_clubs2.png" />
+    <Image Include="..\..\Card Sprites\queen_of_diamonds.png" />
+    <Image Include="..\..\Card Sprites\queen_of_diamonds2.png" />
+    <Image Include="..\..\Card Sprites\queen_of_hearts.png" />
+    <Image Include="..\..\Card Sprites\queen_of_hearts2.png" />
+    <Image Include="..\..\Card Sprites\queen_of_spades.png" />
+    <Image Include="..\..\Card Sprites\queen_of_spades2.png" />
+    <Image Include="..\..\Card Sprites\red_joker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="deck.csv" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
