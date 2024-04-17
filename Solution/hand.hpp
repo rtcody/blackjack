@@ -2,6 +2,7 @@
 
 #include "card.hpp"
 
+//Joey working on hand 
 class Hand 
 {
 
@@ -9,6 +10,6 @@ public:
 	
 
 private: 
-	std::vector<card> blackjackHand; 
+	vector<card> blackjackHand; 
 	
 };
