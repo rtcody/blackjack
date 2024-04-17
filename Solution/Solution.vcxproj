@@ -194,10 +194,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="hand.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="card.hpp" />
+    <ClInclude Include="hand.hpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\..\Card Sprites\10_of_clubs.png" />
