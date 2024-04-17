@@ -199,6 +199,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="card.hpp" />
+    <ClInclude Include="deck.hpp" />
     <ClInclude Include="hand.hpp" />
   </ItemGroup>
   <ItemGroup>
@@ -269,6 +270,7 @@
     <Image Include="..\..\Card Sprites\queen_of_spades.png" />
     <Image Include="..\..\Card Sprites\queen_of_spades2.png" />
     <Image Include="..\..\Card Sprites\red_joker.png" />
+    <Image Include="Cards\background.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="deck.csv" />
