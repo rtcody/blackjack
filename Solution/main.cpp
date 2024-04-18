@@ -1,11 +1,16 @@
+
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
+#include "hand.hpp"
+
 using sf::Texture;
 using sf::Sprite;
 
 
-int main()
+int main(void) 
 {
+    srand((unsigned int)time(NULL)); 
+
     sf::RenderWindow window(sf::VideoMode(1920, 1080), "BLACKJACK");
 
     Texture b;
@@ -26,6 +31,11 @@ int main()
     Sprite card2(x2);
     card2.setScale(0.35f, 0.35f);
     card2.setPosition(920, 700);
+
+    Deck gDeck;
+    Hand h1(gDeck);
+
+    
 
 
     while (window.isOpen())

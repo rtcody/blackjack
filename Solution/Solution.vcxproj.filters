@@ -27,12 +27,33 @@
     <ClCompile Include="hand.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="card.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="deck.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dealer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="card.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="hand.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="deck.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dealer.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -236,6 +257,9 @@
       <Filter>Resource Files\Assets\Cards</Filter>
     </Image>
     <Image Include="..\..\Card Sprites\queen_of_hearts2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Cards\background.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

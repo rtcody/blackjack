@@ -194,13 +194,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="card.cpp" />
+    <ClCompile Include="Dealer.cpp" />
+    <ClCompile Include="deck.cpp" />
     <ClCompile Include="hand.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Player.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="card.hpp" />
+    <ClInclude Include="Dealer.hpp" />
     <ClInclude Include="deck.hpp" />
     <ClInclude Include="hand.hpp" />
+    <ClInclude Include="Player.hpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\..\Card Sprites\10_of_clubs.png" />
