@@ -1,15 +1,19 @@
-
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
 #include "hand.hpp"
+#include "Player.hpp"
+#include "Dealer.hpp"
+#include "test.hpp"
 
 using sf::Texture;
 using sf::Sprite;
 
-
-int main(void) 
+int main(void)
 {
-    srand((unsigned int)time(NULL)); 
+    Test t;
+    t.runTests();
+
+    srand((unsigned int)time(NULL));
 
     sf::RenderWindow window(sf::VideoMode(1920, 1080), "BLACKJACK");
 
@@ -20,22 +24,17 @@ int main(void)
     background.setScale(1.5f, 1.5f);
 
     Texture x1;
-    x1.loadFromFile("Cards/jack_of_hearts2.png");
-    Texture x2;
-    x2.loadFromFile("Cards/ace_of_diamonds.png");
+    x1.loadFromFile("Cards/card back black.png");
 
-    Sprite card1(x1);
-    card1.setScale(0.35f, 0.35f);
-    card1.setPosition(820, 800);
+    //this is a set position for the backcard and I think we should keep it in main in the future because we can control when we want to remove it
+    Sprite backCard(x1);
+    backCard.setScale(0.26f, 0.26f);
+    backCard.setPosition(950, 50);
 
-    Sprite card2(x2);
-    card2.setScale(0.35f, 0.35f);
-    card2.setPosition(920, 700);
 
     Deck gDeck;
-    Hand h1(gDeck);
-
-    
+    Player player(gDeck);
+    Dealer dealer(gDeck);
 
 
     while (window.isOpen())
@@ -50,8 +49,10 @@ int main(void)
 
         window.clear();
         window.draw(background);
-        window.draw(card1);
-        window.draw(card2);
+
+        dealer.displayHand(window);
+        window.draw(backCard); 
+        player.displayHand(window);
         window.display();
     }
 
