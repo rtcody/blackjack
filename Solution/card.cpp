@@ -56,5 +56,3 @@ void card::print()
 {
 	cout << "Value: " << value << ", Suit: " << suit << endl;
 }
-
-
