@@ -1,6 +1,8 @@
 #include "Dealer.hpp"
 
-void Dealer::displayHand(sf::RenderWindow& window)
+
+void Dealer::displayHand(sf::RenderWindow& window) 
+
 {
     float x = 950; //starting x coordinate
     float y = 50; //starting y coordate

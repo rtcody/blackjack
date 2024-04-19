@@ -10,6 +10,7 @@ public:
 
 	}
 
+
 	void displayHand(sf::RenderWindow& window);
 
 	/// <summary>
@@ -17,5 +18,6 @@ public:
 	/// </summary>
 	/// <returns></returns>
 	bool canSplit();
+
 
 };

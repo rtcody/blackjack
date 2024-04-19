@@ -42,3 +42,4 @@ protected: //changed to protected by Ben
 	int handValue; // total value of the hand 
 
 };
+

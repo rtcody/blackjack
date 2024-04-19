@@ -39,4 +39,6 @@ private:
 	char suit;
 	string image;
 
+
 };
+

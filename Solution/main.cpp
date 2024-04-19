@@ -4,7 +4,9 @@
 #include "Player.hpp"
 #include "Dealer.hpp"
 #include "test.hpp"
+
 #include "Button.hpp"
+
 
 using sf::Texture;
 using sf::Sprite;
@@ -37,6 +39,7 @@ int main(void)
     Player player(gDeck);
     Dealer dealer(gDeck);
 
+
     //
     
     Texture HitTexture; 
@@ -68,9 +71,11 @@ int main(void)
 
         window.clear();
         window.draw(background);
+
         window.draw(Hit); 
         dealer.displayHand(window);
         window.draw(backCard);
+
         player.displayHand(window);
         window.display();
     }

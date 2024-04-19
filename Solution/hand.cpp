@@ -23,6 +23,7 @@ Hand::Hand(Deck& gameDeck)
 	/// </summary>
 	/// <returns>the total value of the hand</returns> not anymore
 void Hand::computeHandValue()
+
 {
 	int numAces = 0;
 
@@ -67,7 +68,28 @@ int Hand::computeHandValue(card dummyHand[11])
 			numAces++; //tracks aces 
 		}
 
+
 	}
+}
+
+int Hand::computeHandValue(card dummyHand[11])
+{
+	int newHandValue = 0, numAces = 0;
+
+
+	for (int i = 0; i < cardCount; i++)
+	{
+		if (dummyHand[i].getValue() != 1)
+		{
+			newHandValue += dummyHand[i].getValue(); // computes the hand value if the card isnt an ace   
+		}
+		else
+		{
+			numAces++; //tracks aces 
+		}
+
+	}
+
 
 	for (int i = 0; i < numAces; i++)
 	{
@@ -107,10 +129,14 @@ void Hand::hit(Deck& gameDeck)
 
 card Hand::getCard(int index)
 {
+
 	return blackjackHand[index];
+
 }
 
 int Hand::getHandValue()
 {
 	return handValue;
+
 }
+

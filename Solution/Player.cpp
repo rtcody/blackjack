@@ -42,4 +42,5 @@ bool Player::canSplit()
     }
 
     return split;
+
 }
