@@ -53,24 +53,6 @@ void Hand::computeHandValue()
 	}
 }
 
-int Hand::computeHandValue(card dummyHand[11])
-{
-	int newHandValue = 0, numAces = 0;
-
-	for (int i = 0; i < cardCount; i++)
-	{
-		if (dummyHand[i].getValue() != 1)
-		{
-			newHandValue += dummyHand[i].getValue(); // computes the hand value if the card isnt an ace   
-		}
-		else
-		{
-			numAces++; //tracks aces 
-		}
-
-
-	}
-}
 
 int Hand::computeHandValue(card dummyHand[11])
 {
