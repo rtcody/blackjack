@@ -1,16 +1,11 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
-
-<<<<<<< Updated upstream
-int main()
-{
-    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
-=======
+#include "hand.hpp"
+#include "Player.hpp"
+#include "Dealer.hpp"
+#include "test.hpp"
 #include "Button.hpp"
 #include "Client.h"
-
 
 using sf::Texture;
 using sf::Sprite;
@@ -38,6 +33,7 @@ int main(void)
 
     Test t; 
     t.runTests(); 
+
     sf::RenderWindow window(sf::VideoMode(1920, 1080), "BLACKJACK");
 
     Texture b;
@@ -67,29 +63,35 @@ int main(void)
     HitButton Hit(HitTexture); 
    
 
-   
-
-   
->>>>>>> Stashed changes
-
+  
     while (window.isOpen())
     {
         sf::Event event;
         while (window.pollEvent(event))
         {
             if (event.type == sf::Event::Closed)
+            {
                 window.close();
+            }
+
+          //  if (player.canSplit())
+            //{
+                
+            
+            //}
+           
         }
 
         window.clear();
-        window.draw(shape);
+        window.draw(background);
+
+        window.draw(Hit); 
+        dealer.displayHand(window);
+        window.draw(backCard);
+
+        player.displayHand(window);
         window.display();
     }
-
-<<<<<<< Updated upstream
     return 0;
 }
-=======
-    return 0; 
-}
->>>>>>> Stashed changes
+

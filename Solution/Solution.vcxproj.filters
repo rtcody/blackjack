@@ -27,8 +27,6 @@
     <ClCompile Include="hand.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-<<<<<<< Updated upstream
-=======
     <ClCompile Include="card.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -50,7 +48,6 @@
     <ClCompile Include="Client.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
->>>>>>> Stashed changes
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="card.hpp">
@@ -62,8 +59,6 @@
     <ClInclude Include="deck.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-<<<<<<< Updated upstream
-=======
     <ClInclude Include="Player.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -79,7 +74,6 @@
     <ClInclude Include="Client.h">
       <Filter>Header Files</Filter>
     </ClInclude>
->>>>>>> Stashed changes
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\..\Card Sprites\2_of_clubs.png">
@@ -282,6 +276,36 @@
     </Image>
     <Image Include="..\..\Card Sprites\queen_of_hearts2.png">
       <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Cards\background.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Cards\redHitButton.png">
+      <Filter>Resource Files\Assets\Cards</Filter>
+    </Image>
+    <Image Include="Cards\card back black.png">
+      <Filter>Resource Files\Assets\Cards</Filter>
+    </Image>
+    <Image Include="Cards\greyHitButton.png">
+      <Filter>Resource Files\Assets\Cards</Filter>
+    </Image>
+    <Image Include="Cards\greenDoubleDown.png">
+      <Filter>Resource Files\Assets\Cards</Filter>
+    </Image>
+    <Image Include="Cards\greyDoubleDown.png">
+      <Filter>Resource Files\Assets\Cards</Filter>
+    </Image>
+    <Image Include="Cards\StandButton.png">
+      <Filter>Resource Files\Assets\Cards</Filter>
+    </Image>
+    <Image Include="Cards\greyStandButton.png">
+      <Filter>Resource Files\Assets\Cards</Filter>
+    </Image>
+    <Image Include="Cards\splitButton.png">
+      <Filter>Resource Files\Assets\Cards</Filter>
+    </Image>
+    <Image Include="Cards\greySplitButton.png">
+      <Filter>Resource Files\Assets\Cards</Filter>
     </Image>
   </ItemGroup>
   <ItemGroup>
