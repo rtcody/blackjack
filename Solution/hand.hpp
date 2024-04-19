@@ -1,5 +1,4 @@
 #pragma once
-
 #include <SFML/Graphics.hpp>
 #include "deck.hpp" 
 
@@ -42,4 +41,3 @@ protected: //changed to protected by Ben
 	int handValue; // total value of the hand 
 
 };
-

@@ -6,17 +6,16 @@
 class Deck
 {
 public:
-	Deck();
-	~Deck();
+	Deck(); 
+	~Deck();  
 
-	card* getCards(void);
+	card* getCards(void);      
 
-	card getCard(int index);
+	card getCard(int& index); 
+	card getCard(int index); 
 
-	void shuffle(void);
+	void shuffle(void); 
 
 private:
-	card cards[deckSize];
-
+	card* cards;   
 };
-

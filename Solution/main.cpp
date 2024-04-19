@@ -4,19 +4,35 @@
 #include "Player.hpp"
 #include "Dealer.hpp"
 #include "test.hpp"
-
 #include "Button.hpp"
-
+#include "Client.h"
 
 using sf::Texture;
 using sf::Sprite;
 
 int main(void)
 {
-    Test t;
-    t.runTests();
+    WSADATA wsaData;
+    SOCKET clientSocket;
+    sockaddr_in serverAddr;
+
+    initCreateConnect(wsaData, clientSocket, serverAddr);
+
+    string message;
+ 
+    // Prompt user for input
+    message = promptForInput();
+
+    // Send user input to server
+    sendToServer(message, clientSocket);
+
+    // Close socket
+    closeSocket(clientSocket);
 
     srand((unsigned int)time(NULL));
+
+    Test t; 
+    t.runTests(); 
 
     sf::RenderWindow window(sf::VideoMode(1920, 1080), "BLACKJACK");
 
@@ -47,10 +63,7 @@ int main(void)
     HitButton Hit(HitTexture); 
    
 
-   
-
-   
-
+  
     while (window.isOpen())
     {
         sf::Event event;
@@ -79,6 +92,6 @@ int main(void)
         player.displayHand(window);
         window.display();
     }
-
     return 0;
 }
+
