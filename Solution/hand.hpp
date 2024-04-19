@@ -26,7 +26,7 @@ public:
 	/// </summary>
 	/// <param name="gameDeck"></param>
 	void hit(Deck& gameDeck);
-	
+
 	/// <summary>
 	/// virtual display hand (different for both player and dealer 
 	/// </summary>
@@ -42,3 +42,4 @@ protected: //changed to protected by Ben
 	int handValue; // total value of the hand 
 
 };
+

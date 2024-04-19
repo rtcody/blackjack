@@ -5,6 +5,9 @@
 #include "Dealer.hpp"
 #include "test.hpp"
 
+#include "Button.hpp"
+
+
 using sf::Texture;
 using sf::Sprite;
 
@@ -37,21 +40,42 @@ int main(void)
     Dealer dealer(gDeck);
 
 
+    //
+    
+    Texture HitTexture; 
+    HitTexture.loadFromFile("Cards/redHitButton.png");
+    HitButton Hit(HitTexture); 
+   
+
+   
+
+   
+
     while (window.isOpen())
     {
         sf::Event event;
         while (window.pollEvent(event))
         {
             if (event.type == sf::Event::Closed)
+            {
                 window.close();
-        }
+            }
 
+          //  if (player.canSplit())
+            //{
+                
+            
+            //}
+           
+        }
 
         window.clear();
         window.draw(background);
 
+        window.draw(Hit); 
         dealer.displayHand(window);
-        window.draw(backCard); 
+        window.draw(backCard);
+
         player.displayHand(window);
         window.display();
     }

@@ -194,19 +194,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Button.cpp" />
     <ClCompile Include="card.cpp" />
     <ClCompile Include="Dealer.cpp" />
     <ClCompile Include="deck.cpp" />
     <ClCompile Include="hand.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="test.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Button.hpp" />
     <ClInclude Include="card.hpp" />
     <ClInclude Include="Dealer.hpp" />
     <ClInclude Include="deck.hpp" />
     <ClInclude Include="hand.hpp" />
     <ClInclude Include="Player.hpp" />
+    <ClInclude Include="test.hpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\..\Card Sprites\10_of_clubs.png" />
@@ -277,6 +281,15 @@
     <Image Include="..\..\Card Sprites\queen_of_spades2.png" />
     <Image Include="..\..\Card Sprites\red_joker.png" />
     <Image Include="Cards\background.png" />
+    <Image Include="Cards\card back black.png" />
+    <Image Include="Cards\greenDoubleDown.png" />
+    <Image Include="Cards\greyDoubleDown.png" />
+    <Image Include="Cards\greyHitButton.png" />
+    <Image Include="Cards\greySplitButton.png" />
+    <Image Include="Cards\greyStandButton.png" />
+    <Image Include="Cards\redHitButton.png" />
+    <Image Include="Cards\splitButton.png" />
+    <Image Include="Cards\StandButton.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="deck.csv" />

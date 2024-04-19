@@ -27,3 +27,20 @@ void Player::displayHand(sf::RenderWindow& window)
         y -= 100; //reposition y coordinate for the next card
     }
 }
+
+/// <summary>
+    /// dictates weather the player can split their hand or not
+    /// </summary>
+    /// <returns></returns>
+bool Player::canSplit()
+{
+    bool split = false; 
+
+    if (blackjackHand[0].getValue() == blackjackHand[1].getValue()) // if the first two cards are same number 
+    {
+        split = true;
+    }
+
+    return split;
+
+}

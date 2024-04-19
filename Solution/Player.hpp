@@ -10,6 +10,14 @@ public:
 
 	}
 
+
 	void displayHand(sf::RenderWindow& window);
+
+	/// <summary>
+	/// dictates weather the player can split their hand or not
+	/// </summary>
+	/// <returns></returns>
+	bool canSplit();
+
 
 };

@@ -39,6 +39,12 @@
     <ClCompile Include="Dealer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="card.hpp">
@@ -54,6 +60,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Dealer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="test.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -261,6 +273,33 @@
     </Image>
     <Image Include="Cards\background.png">
       <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Cards\redHitButton.png">
+      <Filter>Resource Files\Assets\Cards</Filter>
+    </Image>
+    <Image Include="Cards\card back black.png">
+      <Filter>Resource Files\Assets\Cards</Filter>
+    </Image>
+    <Image Include="Cards\greyHitButton.png">
+      <Filter>Resource Files\Assets\Cards</Filter>
+    </Image>
+    <Image Include="Cards\greenDoubleDown.png">
+      <Filter>Resource Files\Assets\Cards</Filter>
+    </Image>
+    <Image Include="Cards\greyDoubleDown.png">
+      <Filter>Resource Files\Assets\Cards</Filter>
+    </Image>
+    <Image Include="Cards\StandButton.png">
+      <Filter>Resource Files\Assets\Cards</Filter>
+    </Image>
+    <Image Include="Cards\greyStandButton.png">
+      <Filter>Resource Files\Assets\Cards</Filter>
+    </Image>
+    <Image Include="Cards\splitButton.png">
+      <Filter>Resource Files\Assets\Cards</Filter>
+    </Image>
+    <Image Include="Cards\greySplitButton.png">
+      <Filter>Resource Files\Assets\Cards</Filter>
     </Image>
   </ItemGroup>
   <ItemGroup>

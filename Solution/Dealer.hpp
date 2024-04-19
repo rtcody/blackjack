@@ -13,4 +13,6 @@ public:
 	}
 	void displayHand(sf::RenderWindow& window);
 
+
 };
+
