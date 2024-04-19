@@ -20,16 +20,16 @@ Deck::Deck()
 
 		getline(file, trash);
 		temp.setImage(trash);
-		
-		cards[i] = temp; 
 
-		
+		cards[i] = temp;
+
+
 	}
 }
 
 Deck::~Deck()
 {
-	
+
 }
 
 card* Deck::getCards()
@@ -37,11 +37,6 @@ card* Deck::getCards()
 	return cards;
 }
 
-card Deck::getCard(int& index)
-{
-	index++;
-	return cards[index - 2];
-}
 
 card Deck::getCard(int index)
 {

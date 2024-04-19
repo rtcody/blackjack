@@ -1,13 +1,16 @@
+#pragma once
+
 #include "hand.hpp"
+
+//Ben working on display for player
 
 class Dealer : public Hand
 {
 public:
-	Dealer();
-	void displayHand();
+	Dealer(Deck& gDeck) : Hand(gDeck) //initialized the players hands from the deck
+	{
 
-private:
+	}
+	void displayHand(sf::RenderWindow& window);
 
-	int xCordForNextCard;
-	int yCordForNextCard;
 };
